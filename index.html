@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Daddyy — Web Design & Development Portfolio</title>
+    <meta name="description" content="Dev Daddyy crafts state-of-the-art web experiences, interactive campaign sites, and high-converting web applications for world-class brands. Explore our featured works.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Dynamic Background Ambient Lights -->
+    <div class="ambient-light ambient-1"></div>
+    <div class="ambient-light ambient-2"></div>
+    <div class="ambient-light ambient-3"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar-container" id="navbar">
+        <div class="nav-content">
+            <a href="#" class="brand-logo" id="brand-logo-nav">
+                <span class="logo-text-dev">Dev</span>
+                <div class="blue-orb-icon">
+                    <div class="orb-sphere"></div>
+                    <div class="orb-highlight"></div>
+                    <div class="orb-glow-layer"></div>
+                </div>
+                <span class="logo-text-daddyy">Daddyy</span>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#works" class="nav-link">Our Works</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#process" class="nav-link">Process</a>
+                <a href="mailto:devodaddyy@gmail.com" class="nav-link nav-contact-link">
+                    <i class="fa-solid fa-envelope text-cyan"></i>
+                    <span>devodaddyy@gmail.com</span>
+                </a>
+                <a href="https://instagram.com/dev_o_daddyy" target="_blank" class="nav-link nav-contact-link">
+                    <i class="fa-brands fa-instagram text-cyan"></i>
+                    <span>dev_o_daddyy</span>
+                </a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="mailto:devodaddyy@gmail.com" class="btn btn-primary btn-glow">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Email Us</span>
+                </a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-container">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>✦ DIGITAL CREATIVE STUDIO</span>
+                </div>
+
+                <h1 class="hero-title">
+                    We Build Websites That <br>
+                    <span class="text-gradient">Outshine The Competition</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Dev Daddyy is a high-end web design and development studio. We transform ambitious vision into immersive, high-impact digital experiences through interactive animations, custom canvas engines, and pixel-perfect design.
+                </p>
+
+                <div class="hero-cta-group">
+                    <a href="#works" class="btn btn-hero-primary">
+                        <span>Explore Our Works</span>
+                        <i class="fa-solid fa-fire"></i>
+                    </a>
+                    <a href="https://instagram.com/dev_o_daddyy" target="_blank" class="btn btn-hero-secondary">
+                        <i class="fa-brands fa-instagram text-cyan"></i>
+                        <span>Follow @dev_o_daddyy</span>
+                    </a>
+                </div>
+
+                <!-- 3D Interactive Brand Orb & Showcase Visual -->
+                <div class="hero-visual-wrapper">
+                    <div class="hero-orb-center">
+                        <div class="hero-3d-orb">
+                            <div class="orb-core-3d"></div>
+                            <div class="orb-ring ring-1"></div>
+                            <div class="orb-ring ring-2"></div>
+                            <div class="orb-ring ring-3"></div>
+                            <div class="orb-light-spot"></div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Feature Badges around the Orb -->
+                    <div class="floating-badge badge-top-left">
+                        <i class="fa-solid fa-cube text-cyan"></i>
+                        <div>
+                            <strong>198-Frame Scroll Engine</strong>
+                            <small>Interactive Canvas Storytelling</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-badge badge-top-right">
+                        <i class="fa-solid fa-bolt text-gold"></i>
+                        <div>
+                            <strong>Ultra Performance</strong>
+                            <small>Sub-second Load Speeds</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-badge badge-bottom-left">
+                        <i class="fa-solid fa-wand-magic-sparkles text-purple"></i>
+                        <div>
+                            <strong>Fluid Animations</strong>
+                            <small>Interactive UI & FX</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-badge badge-bottom-right">
+                        <i class="fa-solid fa-shield-halved text-blue"></i>
+                        <div>
+                            <strong>Responsive Architecture</strong>
+                            <small>Pixel Perfect Across Devices</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OUR WORKS SECTION (Core Portfolio) -->
+        <section class="section-padding works-section" id="works">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <div class="section-subtitle">PORTFOLIO SHOWCASE</div>
+                    <h2 class="section-title">Our Works</h2>
+                    <p class="section-description">
+                        Explore our featured web experiences built for high-profile brand campaigns and dynamic commercial platforms.
+                    </p>
+                </div>
+
+                <!-- Works Grid: Exactly 2 Featured Works -->
+                <div class="works-grid" id="works-grid">
+
+                    <!-- WORK ITEM 1: BAJAJ ALMOND DROPS -->
+                    <div class="work-card">
+                        <div class="work-thumb-wrapper">
+                            <div class="work-tag-badge">Featured Campaign</div>
+                            <div class="work-preview-canvas">
+                                <div class="canvas-preview-content">
+                                    <div class="canvas-gold-glow"></div>
+                                    <div class="canvas-brand-name">BAJAJ</div>
+                                    <div class="canvas-sub-name">ALMOND DROPS</div>
+                                    <div class="canvas-bottle-icon">
+                                        <i class="fa-solid fa-droplet text-gold"></i>
+                                    </div>
+                                    <div class="canvas-scroll-tag">
+                                        <i class="fa-solid fa-sliders"></i>
+                                        <span>198-Frame Interactive Canvas Engine</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-overlay">
+                                <button class="btn btn-preview open-modal-btn" 
+                                        data-url="works/bajaj-almond-drops/index.html" 
+                                        data-title="Bajaj Almond Drops — Premium Hair Nourishment">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span>Live Interactive Preview</span>
+                                </button>
+                                <a href="works/bajaj-almond-drops/index.html" target="_blank" class="btn btn-direct-link" title="Open Website">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="work-details">
+                            <div class="work-meta">
+                                <span class="work-category">Luxury Brand Campaign Site</span>
+                                <span class="work-year">2026</span>
+                            </div>
+                            <h3 class="work-title">Bajaj Almond Drops — Golden Radiance</h3>
+                            <p class="work-description">
+                                An interactive scroll-animation campaign website featuring a 198-frame dynamic HTML5 Canvas renderer, illustrating the pure distillation process of almond oil with floating controls and luxury gold aesthetics.
+                            </p>
+                            <div class="work-tech-tags">
+                                <span class="tech-tag">HTML5 Canvas Engine</span>
+                                <span class="tech-tag">198-Frame Sequence</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">Custom Preloader</span>
+                                <span class="tech-tag">Dark/Light Mode</span>
+                            </div>
+                            <div class="work-actions">
+                                <button class="btn btn-work-primary open-modal-btn" 
+                                        data-url="works/bajaj-almond-drops/index.html" 
+                                        data-title="Bajaj Almond Drops — Premium Hair Nourishment">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>Test Live Demo</span>
+                                </button>
+                                <a href="works/bajaj-almond-drops/index.html" target="_blank" class="btn btn-work-secondary">
+                                    <span>Open Full Website</span>
+                                    <i class="fa-solid fa-external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- WORK ITEM 2: ROYAL CHALLENGERS BIRIYANI & BBQ -->
+                    <div class="work-card">
+                        <div class="work-thumb-wrapper">
+                            <div class="work-tag-badge bg-red">Culinary Experience</div>
+                            <div class="work-preview-canvas rcbb-canvas-bg">
+                                <div class="canvas-preview-content">
+                                    <div class="rcbb-fire-glow"></div>
+                                    <div class="rcbb-title-box">
+                                        <div class="rcbb-crest">RCBB</div>
+                                        <div class="rcbb-text">ROYAL CHALLENGERS</div>
+                                        <div class="rcbb-sub">BIRIYANI & BBQ</div>
+                                        <div class="rcbb-slogan">PLAY BOLD. EAT BOLD.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-overlay">
+                                <button class="btn btn-preview open-modal-btn" 
+                                        data-url="works/rcbb/index.html" 
+                                        data-title="Royal Challengers Biriyani & BBQ">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span>Live Interactive Preview</span>
+                                </button>
+                                <a href="works/rcbb/index.html" target="_blank" class="btn btn-direct-link" title="Open Website">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="work-details">
+                            <div class="work-meta">
+                                <span class="work-category">Multi-Hub Restaurant & Fan Portal</span>
+                                <span class="work-year">2026</span>
+                            </div>
+                            <h3 class="work-title">Royal Challengers Biriyani & BBQ</h3>
+                            <p class="work-description">
+                                A high-energy dark-mode restaurant website engineered with bold gold and red glowing highlights, AOS scroll animations, Google Maps hub locators, and Instagram social media integrations.
+                            </p>
+                            <div class="work-tech-tags">
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">AOS Animations</span>
+                                <span class="tech-tag">Dark Mode UI</span>
+                                <span class="tech-tag">Hub Location Finder</span>
+                                <span class="tech-tag">Social Integration</span>
+                            </div>
+                            <div class="work-actions">
+                                <button class="btn btn-work-primary open-modal-btn" 
+                                        data-url="works/rcbb/index.html" 
+                                        data-title="Royal Challengers Biriyani & BBQ">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>Test Live Demo</span>
+                                </button>
+                                <a href="works/rcbb/index.html" target="_blank" class="btn btn-work-secondary">
+                                    <span>Open Full Website</span>
+                                    <i class="fa-solid fa-external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section class="section-padding services-section" id="services">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <div class="section-subtitle">WHAT WE DO</div>
+                    <h2 class="section-title">Engineered for Perfection</h2>
+                    <p class="section-description">
+                        We build tailor-made digital experiences that captivate visitors and elevate brand identity.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3 class="service-title">Custom Web Development</h3>
+                        <p class="service-text">
+                            Bespoke HTML5, CSS3, and JavaScript architectures. Clean, modular code engineered for speed, responsiveness, and longevity.
+                        </p>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-check text-cyan"></i> Zero bloat, pure optimized code</li>
+                            <li><i class="fa-solid fa-check text-cyan"></i> Fully responsive mobile layouts</li>
+                            <li><i class="fa-solid fa-check text-cyan"></i> Cross-browser compatibility</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+                        <h3 class="service-title">3D & Interactive Canvas</h3>
+                        <p class="service-text">
+                            Immersive interactive scenes, scroll-triggered frame sequences, and animations that leave an unforgettable impression.
+                        </p>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-check text-cyan"></i> Scroll-synced canvas frames</li>
+                            <li><i class="fa-solid fa-check text-cyan"></i> 60 FPS fluid performance</li>
+                            <li><i class="fa-solid fa-check text-cyan"></i> Interactive product showcase</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <h3 class="service-title">UI/UX & Brand Aesthetics</h3>
+                        <p class="service-text">
+                            Luxury aesthetics, curated color palettes, dark mode styling, and micro-interactions designed for high user engagement.
+                        </p>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-check text-cyan"></i> Dark & Light theme design</li>
+                            <li><i class="fa-solid fa-check text-cyan"></i> Custom micro-interactions</li>
+                            <li><i class="fa-solid fa-check text-cyan"></i> High-conversion UI layout</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OUR PROCESS SECTION -->
+        <section class="section-padding process-section" id="process">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <div class="section-subtitle">THE DEV DADDYY WAY</div>
+                    <h2 class="section-title">Our Process</h2>
+                    <p class="section-description">
+                        From initial vision to final deployment, we follow a precise methodology for every project.
+                    </p>
+                </div>
+
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="step-number-badge">01</div>
+                        <h3 class="process-step-title">Blueprint & Discovery</h3>
+                        <p class="process-step-text">
+                            We analyze your brand vision, target audience, and website goals to map out structure and content flow.
+                        </p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number-badge">02</div>
+                        <h3 class="process-step-title">UX/UI & Motion Concept</h3>
+                        <p class="process-step-text">
+                            We craft visual concepts, color schemes, animations, and typography before building the code foundation.
+                        </p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number-badge">03</div>
+                        <h3 class="process-step-title">Clean Code Engineering</h3>
+                        <p class="process-step-text">
+                            We build your website with semantic HTML5, modern CSS, canvas engines, and JavaScript optimized for speed.
+                        </p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number-badge">04</div>
+                        <h3 class="process-step-title">Testing & Launch</h3>
+                        <p class="process-step-text">
+                            We execute cross-device QA testing, performance audits, and launch the website for the world to see.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-brand-col">
+                <a href="#" class="brand-logo">
+                    <span class="logo-text-dev">Dev</span>
+                    <div class="blue-orb-icon">
+                        <div class="orb-sphere"></div>
+                        <div class="orb-highlight"></div>
+                        <div class="orb-glow-layer"></div>
+                    </div>
+                    <span class="logo-text-daddyy">Daddyy</span>
+                </a>
+                <p class="footer-tagline">Crafting world-class websites and interactive web experiences.</p>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Navigation</h4>
+                <a href="#hero">Home</a>
+                <a href="#works">Our Works</a>
+                <a href="#services">Services</a>
+                <a href="#process">Process</a>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Our Featured Works</h4>
+                <a href="works/bajaj-almond-drops/index.html" target="_blank">Bajaj Almond Drops</a>
+                <a href="works/rcbb/index.html" target="_blank">Royal Challengers Biriyani & BBQ</a>
+            </div>
+
+            <div class="footer-social-col">
+                <h4>Connect With Us</h4>
+                <div class="footer-contact-details" style="margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-muted);">
+                    <div style="margin-bottom: 0.4rem;">
+                        <i class="fa-solid fa-envelope text-cyan"></i> <a href="mailto:devodaddyy@gmail.com" style="color: #FFF;">devodaddyy@gmail.com</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-instagram text-cyan"></i> <a href="https://instagram.com/dev_o_daddyy" target="_blank" style="color: #FFF;">@dev_o_daddyy</a>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="mailto:devodaddyy@gmail.com" aria-label="Gmail"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://instagram.com/dev_o_daddyy" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dev Daddyy. All Rights Reserved. Pure Web Craftsmanship.</p>
+        </div>
+    </footer>
+
+    <!-- LIVE PROJECT PREVIEW OVERLAY MODAL -->
+    <div class="preview-modal-overlay" id="preview-modal">
+        <div class="preview-modal-container">
+            <div class="preview-modal-header">
+                <div class="modal-title-box">
+                    <div class="modal-brand-badge">Dev Daddyy Showcase</div>
+                    <h3 id="modal-project-title">Project Live Preview</h3>
+                </div>
+                
+                <div class="modal-device-controls">
+                    <button class="device-btn active" data-device="desktop" title="Desktop View">
+                        <i class="fa-solid fa-desktop"></i>
+                    </button>
+                    <button class="device-btn" data-device="tablet" title="Tablet View">
+                        <i class="fa-solid fa-tablet-screen-button"></i>
+                    </button>
+                    <button class="device-btn" data-device="mobile" title="Mobile View">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </button>
+                </div>
+
+                <div class="modal-actions">
+                    <a href="#" id="modal-external-link" target="_blank" class="btn btn-sm btn-secondary" title="Open in new tab">
+                        <span>External Link</span>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                    <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="preview-modal-body">
+                <div class="iframe-frame-wrapper device-desktop" id="iframe-wrapper">
+                    <iframe id="project-preview-iframe" src="about:blank" title="Live Project Preview"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JS -->
+    <script src="main.js"></script>
+</body>
+</html>
