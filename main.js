@@ -1,5 +1,5 @@
 /* ==========================================================================
-   DEV DADDYY - INTERACTIVE JAVASCRIPT CONTROLLER
+   DEV DADDYY - INTERACTIVE JAVASCRIPT CONTROLLER (MOBILE OPTIMIZED)
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.getElementById('navbar');
     const mobileToggle = document.getElementById('mobile-toggle');
     const navLinksContainer = document.getElementById('nav-links');
+    const navLinks = document.querySelectorAll('.nav-link');
 
     if (navbar) {
         window.addEventListener('scroll', () => {
@@ -22,18 +23,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (mobileToggle && navLinksContainer) {
-        mobileToggle.addEventListener('click', () => {
-            const isFlex = navLinksContainer.style.display === 'flex';
-            navLinksContainer.style.display = isFlex ? 'none' : 'flex';
-            if (!isFlex) {
-                navLinksContainer.style.flexDirection = 'column';
-                navLinksContainer.style.position = 'absolute';
-                navLinksContainer.style.top = '100%';
-                navLinksContainer.style.left = '0';
-                navLinksContainer.style.right = '0';
-                navLinksContainer.style.background = '#0E121B';
-                navLinksContainer.style.padding = '2rem';
-                navLinksContainer.style.borderBottom = '1px solid rgba(255,255,255,0.1)';
+        mobileToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isOpen = navLinksContainer.classList.contains('mobile-active');
+            
+            if (isOpen) {
+                navLinksContainer.classList.remove('mobile-active');
+                mobileToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            } else {
+                navLinksContainer.classList.add('mobile-active');
+                mobileToggle.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+            }
+        });
+
+        // Close mobile menu when clicking any link inside
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinksContainer.classList.remove('mobile-active');
+                mobileToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navLinksContainer.contains(e.target) && !mobileToggle.contains(e.target)) {
+                navLinksContainer.classList.remove('mobile-active');
+                mobileToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
             }
         });
     }
