@@ -75,7 +75,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (projectUrl) {
                     iframe.src = projectUrl;
                     if (modalExternalLink) {
-                        modalExternalLink.href = projectUrl;
+                        let vercelUrl = projectUrl;
+                        if (projectUrl.includes('bajaj')) {
+                            vercelUrl = 'https://dev-o-daddyy.vercel.app/';
+                        } else if (projectUrl.includes('rcbb')) {
+                            vercelUrl = 'https://rcbbb.vercel.app/';
+                        }
+                        modalExternalLink.href = vercelUrl;
                         modalExternalLink.style.display = 'inline-flex';
                     }
                     if (modalTitle) {
